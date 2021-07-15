@@ -24,6 +24,6 @@ def product_details(request, slug):
 
 def category_list(request, category_slug):
     category = get_object_or_404(Category, slug=category_slug)
-    product = Product.objects.filfaketer(category=category)
+    product = Product.objects.filter(category=category)
     context = {'category': category, 'products': product}
     return render(request, 'store/products/category.html', context=context)
