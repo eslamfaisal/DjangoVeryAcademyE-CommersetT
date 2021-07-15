@@ -2,3 +2,5 @@
 venv/
 
 part1/htmlcov/
+
+part1/store/__pycache__/
